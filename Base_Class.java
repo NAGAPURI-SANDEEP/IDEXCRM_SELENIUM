@@ -8,12 +8,14 @@ import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
 
 
 public class Base_Class {
 	
 	public static WebDriver driver;
 
+	@BeforeTest
 	public static void UserLogin() throws IOException, InterruptedException {
 		
 		//location of the properties file
@@ -35,10 +37,10 @@ public class Base_Class {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		
-		driver.get(APP_URL); //Opening application with the url 
-		driver.findElement(By.id("login_emailId")).sendKeys(USER_EMAIL); //User email id 
-		driver.findElement(By.id("login_password")).sendKeys(USER_PASSWORD);  //User Password 
-		driver.findElement(By.xpath("//button[@type='submit']")).click();   //click on sign in
+		driver.get(APP_URL);                                                                //Opening application with the url 
+		driver.findElement(By.id("login_emailId")).sendKeys(USER_EMAIL);                     //User email id 
+		driver.findElement(By.id("login_password")).sendKeys(USER_PASSWORD);                 //User Password 
+		driver.findElement(By.xpath("//button[@type='submit']")).click();                    //click on sign in
 		
 	
 				

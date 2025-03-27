@@ -10,10 +10,9 @@ import UTILS.Base_Class;
 public class Add_Idex_User extends User_Management_Pg {
 
 	@Test
-	public static void adduser() throws IOException, InterruptedException {
+	public static void addIdexuser() throws IOException, InterruptedException {
 
 		Base_Class.UserLogin();
-
 		User_Management_Pg.addIdexUser();
 
 	}
