@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-import PAGES.User_Management_Pg;
+import PAGES.Add_User_Pg;
 import UTILS.Base_Class;
 
 public class Add_Users {
@@ -13,14 +13,14 @@ public class Add_Users {
 	public static void addCustomerUser() throws IOException, InterruptedException {
 		 
 		Base_Class.UserLogin();
-		User_Management_Pg.addCustomerUser();
+		Add_User_Pg.addCustomerUser();
 	}
 
 	@Test(priority = 3)
 	public static void addServicePartner() throws IOException, InterruptedException {
 		Base_Class.UserLogin();
 		
-		User_Management_Pg.addServicePartnerUser();
+		Add_User_Pg.addServicePartnerUser();
 	}
 
 	@Test(priority = 1)
@@ -28,7 +28,7 @@ public class Add_Users {
 	
 		Base_Class.UserLogin();
 	
-		User_Management_Pg.addIdexUser();
+		Add_User_Pg.addIdexUser();
 	
 	}
 	
