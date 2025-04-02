@@ -9,9 +9,13 @@ public class Delete_User_Pg extends Base_Class {
 	
 	public static void deleteIdexUser() throws InterruptedException {
 		
-		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div[2]/div/div[2]/div[1]")).click();                    //Click on idex module
 		
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div[1]/div/div/div[2]/div[7]/span/div")).click();             //click on user management module
+		
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div[2]/div/div[2]/div[1]")).click();                    //Click on idex module
+
+		
+		
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div[2]/div/div[3]/div/div/div/div/div/div[2]/table/tbody/tr[2]/td[7]/div/span")).click();   //click on three dots
 		driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/div/div/div/div[3]/div[2]")).click();                      // click on delete button 
 		WebElement delete=driver.findElement(By.className("ant-modal-content"));                                             // switch to modal form 
