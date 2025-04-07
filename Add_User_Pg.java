@@ -16,7 +16,7 @@ public class Add_User_Pg extends Base_Class  {
 		
 	
 	driver.findElement(By.id("register_displayName")).sendKeys("Sidhu sidarthar Roy");      //Enter User Name 
-	driver.findElement(By.id("register_emailId")).sendKeys("sidhu321s23@yopmail.com");         //Enter  Email id
+	driver.findElement(By.id("register_emailId")).sendKeys("sidhu321@yopmail.com");         //Enter  Email id
 	driver.findElement(By.id("register_mobileNo")).sendKeys("1234567898");                   //Enter  Phone Number
 	
 	
@@ -33,7 +33,7 @@ public class Add_User_Pg extends Base_Class  {
 	driver.findElement(By.xpath("//*[@id=\"register\"]/footer/div/button[1]")).click();         // Click on add button 
 	
 	Thread.sleep(3000);
-	driver.close();
+	//driver.close();
 		
 		
 	}
@@ -52,7 +52,7 @@ public class Add_User_Pg extends Base_Class  {
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[2]/div/div[1]/div[2]/div/div[1]/button")).click(); // Click on add button
 		
 		driver.findElement(By.id("register_displayName")).sendKeys("sandy_123");                 //Enter User Name 
-		driver.findElement(By.id("register_emailId")).sendKeys("sandy4s5123@yopmail.com");        //Enter  Email id
+		driver.findElement(By.id("register_emailId")).sendKeys("sandy4252123@yopmail.com");        //Enter  Email id
 		driver.findElement(By.id("register_mobileNo")).sendKeys("1234567987");                    //Enter the mobile number 
 		
 		
@@ -81,7 +81,7 @@ public class Add_User_Pg extends Base_Class  {
 		driver.findElement(By.xpath("//*[@id=\"register\"]/footer/div/button[1]")).click();         // Click on add button 
 		
 		Thread.sleep(3000);
-		driver.close();
+		//driver.close();
 	}
 	
 	
@@ -93,7 +93,7 @@ public class Add_User_Pg extends Base_Class  {
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[2]/div/div[1]/div[2]/div/div[1]/button")).click(); // Click on add button
 
 		driver.findElement(By.id("register_displayName")).sendKeys("sandeep_123");                 //Enter User Name 
-		driver.findElement(By.id("register_emailId")).sendKeys("sandeeps78@yopmail.com");        //Enter  Email id
+		driver.findElement(By.id("register_emailId")).sendKeys("sandeeps278@yopmail.com");        //Enter  Email id
 		driver.findElement(By.id("register_mobileNo")).sendKeys("1234567987");                    //Enter the mobile number 
 		
 		
@@ -121,7 +121,7 @@ public class Add_User_Pg extends Base_Class  {
 		driver.findElement(By.xpath("//*[@id=\"register\"]/footer/div/button[1]")).click();         // Click on add button 
 		
 		Thread.sleep(3000);
-		driver.close();
+		//driver.close();
 		
 	
 

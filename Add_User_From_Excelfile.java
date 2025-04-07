@@ -115,8 +115,10 @@ public static void addCustomerUser() throws IOException, InterruptedException  {
 			
 			
 			
-			driver.findElement(By.id("rc_select_5")).click();                                        // select the customer from dropdown 
+			driver.findElement(By.id("rc_select_5")).click();                                       // select the customer from dropdown 
 			driver.findElement(By.id("rc_select_5")).sendKeys("KNPL");								// enter the customer name
+			
+		
 			Thread.sleep(5000);
 			driver.findElement(By.id("rc_select_5")).sendKeys(Keys.ARROW_DOWN);
 			driver.findElement(By.id("rc_select_5")).sendKeys(Keys.ARROW_DOWN);

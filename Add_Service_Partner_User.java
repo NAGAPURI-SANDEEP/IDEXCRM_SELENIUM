@@ -13,7 +13,7 @@ public class Add_Service_Partner_User extends Add_User_Pg
 	
 	@Test
 	public static void addServicePartner() throws IOException, InterruptedException {
-		Base_Class.UserLogin();
+		
 		Add_User_Pg.addServicePartnerUser();
 	}
 	

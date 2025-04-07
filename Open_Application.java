@@ -11,7 +11,7 @@ public class Open_Application extends Base_Class{
 @Test
 public static void openapp() throws IOException, InterruptedException {
 	
-	Base_Class.UserLogin();
+
 }
 
 }
