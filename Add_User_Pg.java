@@ -2,8 +2,13 @@ package PAGES;
 
 
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import UTILS.Base_Class;
 
@@ -61,7 +66,15 @@ public class Add_User_Pg extends Base_Class  {
 		driver.findElement(By.id("register_roleId")).sendKeys(Keys.ARROW_DOWN);                   // second option 
 		driver.findElement(By.id("register_roleId")).sendKeys(Keys.ENTER);                        //click on enter button
 		
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//		WebElement searchInput = wait.until(ExpectedConditions.visibilityOfElementLocated(
+//		    By.xpath("//div[contains(@class,'ant-select-selector')]//input[@type='search']")
+//		));
+//		searchInput.sendKeys("");
+
 		
+		
+
 		driver.findElement(By.id("rc_select_5")).click();                                        // select the customer from dropdown 
 		driver.findElement(By.id("rc_select_5")).sendKeys("KNPL");								// enter the customer name
 		Thread.sleep(5000);
