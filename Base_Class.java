@@ -8,17 +8,20 @@ import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 
 public class Base_Class {
 	
 	public static WebDriver driver;
 
-	@BeforeMethod
+	@BeforeTest
 	public static void UserLogin() throws IOException, InterruptedException {
 		
 		//location of the properties file
@@ -34,7 +37,7 @@ public class Base_Class {
 		String USER_EMAIL=pfile.getProperty("email");
 		String USER_PASSWORD=pfile.getProperty("password");
 		
-		
+	
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -51,7 +54,26 @@ public class Base_Class {
 				
 	}
 	
-	@AfterMethod
+//	
+//	@Test
+//	public static void print_1() {
+//		System.out.println("The system should display the test method-1");
+//	}
+//
+//
+//	@Test
+//	public static void print_2() {
+//		System.out.println("The system should display the test method-2");
+//	}
+//	
+//	@Test
+//	public static void print_3() {
+//		System.out.println("The system should display the test method-3");
+//	}
+	
+	
+	
+	@AfterTest
 	
 	public static void logout() throws InterruptedException {
 		
